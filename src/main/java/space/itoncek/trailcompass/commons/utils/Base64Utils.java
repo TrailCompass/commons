@@ -13,13 +13,11 @@ public class Base64Utils {
 		}
 	}
 
-	public static Serializable deserializeFromBase64(String input) throws ClassNotFoundException {
+	public static Serializable deserializeFromBase64(String input) throws ClassNotFoundException, IOException {
 		byte[] decode = Base64.getDecoder().decode(input);
 		try (ByteArrayInputStream bais = new ByteArrayInputStream(decode);
 			 ObjectInputStream ois = new ObjectInputStream(bais)) {
 			return (Serializable) ois.readObject();
-		} catch (Exception e) {
-			return null;
 		}
 	}
 }
