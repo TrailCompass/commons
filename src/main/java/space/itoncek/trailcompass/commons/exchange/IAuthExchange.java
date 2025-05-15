@@ -7,10 +7,13 @@ import space.itoncek.trailcompass.commons.requests.auth.RegisterRequest;
 import space.itoncek.trailcompass.commons.responses.auth.LoginResponse;
 import space.itoncek.trailcompass.commons.responses.auth.ProfileResponse;
 import space.itoncek.trailcompass.commons.responses.generic.OkResponse;
+import space.itoncek.trailcompass.commons.utils.BackendException;
+
+import java.io.IOException;
 
 public interface IAuthExchange {
-	LoginResponse login(LoginRequest request);
-	OkResponse register(RegisterRequest request);
-	ProfileResponse getProfile(ProfileRequest request);
-	ProfileResponse getOtherProfile(ProfileOtherRequest request);
+	LoginResponse login(LoginRequest request) throws BackendException;
+	OkResponse register(RegisterRequest request) throws BackendException;
+	ProfileResponse getProfile(ProfileRequest request) throws BackendException;
+	ProfileResponse getOtherProfile(ProfileOtherRequest request) throws BackendException;
 }
