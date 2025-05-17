@@ -3,6 +3,7 @@ package space.itoncek.trailcompass.api;
 import space.itoncek.trailcompass.api.utils.HttpUtils;
 import space.itoncek.trailcompass.commons.exchange.IAuthExchange;
 import space.itoncek.trailcompass.commons.exchange.IExchange;
+import space.itoncek.trailcompass.commons.exchange.IMapExchange;
 import space.itoncek.trailcompass.commons.exchange.ISystemExchange;
 
 public class ExchangeHandler implements IExchange {
@@ -20,5 +21,10 @@ public class ExchangeHandler implements IExchange {
 	@Override
 	public ISystemExchange system() {
 		return new SystemExchange(this);
+	}
+
+	@Override
+	public IMapExchange map() {
+		return new MapExchange(this);
 	}
 }
