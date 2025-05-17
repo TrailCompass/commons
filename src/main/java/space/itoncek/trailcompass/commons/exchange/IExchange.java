@@ -4,4 +4,5 @@ public interface IExchange {
 	IAuthExchange auth();
 	ISystemExchange system();
 	IMapExchange map();
+	IGameManagerExchange gameMgr();
 }

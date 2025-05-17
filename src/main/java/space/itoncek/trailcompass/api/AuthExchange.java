@@ -1,12 +1,12 @@
 package space.itoncek.trailcompass.api;
 
-import space.itoncek.trailcompass.commons.requests.auth.*;
-import space.itoncek.trailcompass.commons.responses.auth.ProfileListResponse;
-import space.itoncek.trailcompass.commons.utils.BackendException;
 import space.itoncek.trailcompass.commons.exchange.IAuthExchange;
+import space.itoncek.trailcompass.commons.requests.auth.*;
 import space.itoncek.trailcompass.commons.responses.auth.LoginResponse;
+import space.itoncek.trailcompass.commons.responses.auth.ProfileListResponse;
 import space.itoncek.trailcompass.commons.responses.auth.ProfileResponse;
 import space.itoncek.trailcompass.commons.responses.generic.OkResponse;
+import space.itoncek.trailcompass.commons.utils.BackendException;
 
 import java.io.IOException;
 
