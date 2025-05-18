@@ -14,8 +14,6 @@ public interface IGameManagerExchange {
 
 	OkResponse changeCurrentHider(ChangeCurrentHiderRequest request) throws BackendException;
 
-	OkResponse cycleCurrentHider(CycleCurrentHiderRequest request) throws BackendException;
-
 	StartingTimeResponse getStartingTime(StartingTimeRequest request) throws BackendException;
 
 	OkResponse finishSetup(FinishSetupRequest request) throws BackendException;

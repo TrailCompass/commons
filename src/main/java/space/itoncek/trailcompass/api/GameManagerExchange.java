@@ -45,15 +45,6 @@ public class GameManagerExchange implements IGameManagerExchange {
 	}
 
 	@Override
-	public OkResponse cycleCurrentHider(CycleCurrentHiderRequest request) throws BackendException {
-		try {
-			return (OkResponse) ex.http.executeRequest(request);
-		} catch (IOException | ClassNotFoundException e) {
-			throw new BackendException(e);
-		}
-	}
-
-	@Override
 	public StartingTimeResponse getStartingTime(StartingTimeRequest request) throws BackendException {
 		try {
 			return (StartingTimeResponse) ex.http.executeRequest(request);
