@@ -7,7 +7,6 @@ public class Base64Utils {
 	public static String serializeToBase64(Serializable obj) throws IOException {
 		try (ByteArrayOutputStream baos = new ByteArrayOutputStream();
 			 ObjectOutputStream oos = new ObjectOutputStream(baos)) {
-			System.out.println(obj.getClass().getName());
 			oos.writeObject(obj);
 			return Base64.getEncoder().encodeToString(baos.toByteArray());
 		}

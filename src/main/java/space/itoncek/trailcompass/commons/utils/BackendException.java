@@ -1,6 +1,6 @@
 package space.itoncek.trailcompass.commons.utils;
 
-public class BackendException extends Throwable {
+public class BackendException extends Exception {
 	public BackendException(String formatted) {
 		super(formatted);
 	}
