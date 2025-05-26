@@ -1,7 +1,9 @@
 package space.itoncek.trailcompass.api;
 
 import space.itoncek.trailcompass.api.utils.HttpUtils;
+import space.itoncek.trailcompass.api.wrapper.WrappedExchange;
 import space.itoncek.trailcompass.commons.exchange.*;
+import space.itoncek.trailcompass.commons.objects.Token;
 
 public class ExchangeHandler implements IExchange {
 	public final HttpUtils http;
@@ -28,5 +30,9 @@ public class ExchangeHandler implements IExchange {
 	@Override
 	public IGameManagerExchange gameMgr() {
 		return new GameManagerExchange(this);
+	}
+
+	public WrappedExchange wrapped(Token token) {
+		return new WrappedExchange(this, token);
 	}
 }

@@ -31,7 +31,7 @@ public class HttpUtils {
 			Serializable serializable = Base64Utils.deserializeFromBase64(s);
 
 			if (serializable instanceof ErrorResponse(String exception)) {
-				throw new BackendException("Server has thrown the following exception: \n%s".formatted(exception));
+				throw new BackendException(String.format("Server has thrown the following exception: \n%s", exception));
 			}
 
 			return serializable;
