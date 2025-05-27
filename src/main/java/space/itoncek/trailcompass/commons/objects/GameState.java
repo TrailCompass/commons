@@ -1,6 +1,7 @@
 package space.itoncek.trailcompass.commons.objects;
 
 public enum GameState {
+	// TODO)) When changed, please update commons version (more info in Constants.java)
 	SETUP,
 	OUTSIDE_OF_GAME,
 	MOVE_PERIOD,

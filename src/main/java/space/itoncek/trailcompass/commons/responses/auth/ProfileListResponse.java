@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public record ProfileListResponse(List<Player> players) implements Serializable {
+	// TODO)) When changed, please update commons version (more info in Constants.java)
 	@Serial
-	private static final long serialVersionUID = Constants.serialVersionUID;
+	private static final long serialVersionUID = Constants.versionID;
 }
