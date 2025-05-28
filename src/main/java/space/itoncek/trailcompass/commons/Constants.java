@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Constants {
-	public static final long versionID = stringVersionDouble();
+	public static final long versionID = versionID();
 
 	//-------------------------------------------------------------------------------
 	// TODO)) Updating version when "API" has changed
@@ -27,7 +27,7 @@ public class Constants {
 	//  - Could be more than zero on main branch
 	//  - Attempt to keep backend & app projects up to date
 	//-------------------------------------------------------------------------------
-	private static long stringVersionDouble() {
+	private static long versionID() {
 		final String regex = "v([0-9]+)\\.([0-9]+)\\.([0-9]+)\\.([0-9]+)";
 
 		final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);

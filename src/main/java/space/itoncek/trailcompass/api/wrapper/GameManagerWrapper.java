@@ -1,16 +1,14 @@
 package space.itoncek.trailcompass.api.wrapper;
 
 import java.time.ZonedDateTime;
+import java.util.List;
 import java.util.UUID;
 
 import space.itoncek.trailcompass.api.ExchangeHandler;
 import space.itoncek.trailcompass.commons.objects.GameState;
+import space.itoncek.trailcompass.commons.objects.Location;
 import space.itoncek.trailcompass.commons.objects.Token;
-import space.itoncek.trailcompass.commons.requests.gamemgr.ChangeCurrentHiderRequest;
-import space.itoncek.trailcompass.commons.requests.gamemgr.CurrentHiderRequest;
-import space.itoncek.trailcompass.commons.requests.gamemgr.FinishSetupRequest;
-import space.itoncek.trailcompass.commons.requests.gamemgr.GameStateRequest;
-import space.itoncek.trailcompass.commons.requests.gamemgr.StartingTimeRequest;
+import space.itoncek.trailcompass.commons.requests.gamemgr.*;
 import space.itoncek.trailcompass.commons.responses.generic.OkResponse;
 import space.itoncek.trailcompass.commons.utils.BackendException;
 
@@ -28,13 +26,11 @@ public class GameManagerWrapper {
     public UUID getCurrentHider() throws BackendException {
         return eh.gameMgr().getCurrentHider(new CurrentHiderRequest(token)).id();
     }
-    public OkResponse changeCurrentHider(UUID new_hider) throws BackendException {
-        return eh.gameMgr().changeCurrentHider(new ChangeCurrentHiderRequest(token,new_hider));
-    }
     public ZonedDateTime getStartingTime() throws BackendException {
         return eh.gameMgr().getStartingTime(new StartingTimeRequest(token)).dateTime();
     }
-    public OkResponse finishSetup(FinishSetupRequest request) throws BackendException {
-        return eh.gameMgr().finishSetup(new FinishSetupRequest(token));
+
+    public List<Location> getSeekerLocation() throws BackendException {
+        return eh.gameMgr().getSeekerLocation(new SeekerLocationRequest(token)).locations();
     }
 }
