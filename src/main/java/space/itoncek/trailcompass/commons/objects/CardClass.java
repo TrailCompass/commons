@@ -5,12 +5,10 @@ import space.itoncek.trailcompass.commons.Constants;
 import java.io.Serial;
 import java.io.Serializable;
 
-public enum GameState implements Serializable {
-	WAITING_FOR_GAME,
-	MOVE_PERIOD,
-	INGAME,
-	REST_PERIOD,
-	ERROR, ENDED;
+public enum CardClass implements Serializable {
+	Curse,
+	Powerup,
+	Time;
 	// TODO)) When changed, please update commons version (more info in Constants.java)
 	@Serial
 	private static final long serialVersionUID = Constants.versionID;
