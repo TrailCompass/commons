@@ -29,6 +29,9 @@ public class GameManagerWrapper {
     public ZonedDateTime getStartingTime() throws BackendException {
         return eh.gameMgr().getStartingTime(new StartingTimeRequest(token)).dateTime();
     }
+    public ZonedDateTime getEndingTime() throws BackendException {
+        return eh.gameMgr().getEndingTime(new EndingTimeRequest(token)).dateTime();
+    }
 
     public List<Location> getSeekerLocation() throws BackendException {
         return eh.gameMgr().getSeekerLocation(new SeekerLocationRequest(token)).locations();

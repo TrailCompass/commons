@@ -5,8 +5,7 @@ import space.itoncek.trailcompass.commons.requests.gamemgr.*;
 import space.itoncek.trailcompass.commons.responses.gamemgr.CurrentHiderResponse;
 import space.itoncek.trailcompass.commons.responses.gamemgr.GameStateResponse;
 import space.itoncek.trailcompass.commons.responses.gamemgr.SeekerLocationResponse;
-import space.itoncek.trailcompass.commons.responses.gamemgr.StartingTimeResponse;
-import space.itoncek.trailcompass.commons.responses.generic.OkResponse;
+import space.itoncek.trailcompass.commons.responses.gamemgr.TimeResponse;
 import space.itoncek.trailcompass.commons.utils.BackendException;
 
 import java.io.IOException;
@@ -37,9 +36,18 @@ public class GameManagerExchange implements IGameManagerExchange {
 	}
 
 	@Override
-	public StartingTimeResponse getStartingTime(StartingTimeRequest request) throws BackendException {
+	public TimeResponse getStartingTime(StartingTimeRequest request) throws BackendException {
 		try {
-			return (StartingTimeResponse) ex.http.executeRequest(request);
+			return (TimeResponse) ex.http.executeRequest(request);
+		} catch (IOException | ClassNotFoundException e) {
+			throw new BackendException(e);
+		}
+	}
+
+	@Override
+	public TimeResponse getEndingTime(EndingTimeRequest request) throws BackendException {
+		try {
+			return (TimeResponse) ex.http.executeRequest(request);
 		} catch (IOException | ClassNotFoundException e) {
 			throw new BackendException(e);
 		}
