@@ -1,16 +1,27 @@
 package space.itoncek.trailcompass.api.wrapper;
 
-import java.time.ZonedDateTime;
-import java.util.List;
-import java.util.UUID;
+/*
+ *
+ * ████████╗██████╗  █████╗ ██╗██╗      ██████╗ ██████╗ ███╗   ███╗██████╗  █████╗ ███████╗███████╗
+ * ╚══██╔══╝██╔══██╗██╔══██╗██║██║     ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██╔══██╗██╔════╝██╔════╝
+ *    ██║   ██████╔╝███████║██║██║     ██║     ██║   ██║██╔████╔██║██████╔╝███████║███████╗███████╗
+ *    ██║   ██╔══██╗██╔══██║██║██║     ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██╔══██║╚════██║╚════██║
+ *    ██║   ██║  ██║██║  ██║██║███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ██║  ██║███████║███████║
+ *    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
+ *
+ *                                    Copyright (c) 2025.
+ */
 
 import space.itoncek.trailcompass.api.ExchangeHandler;
 import space.itoncek.trailcompass.commons.objects.GameState;
 import space.itoncek.trailcompass.commons.objects.Location;
 import space.itoncek.trailcompass.commons.objects.Token;
 import space.itoncek.trailcompass.commons.requests.gamemgr.*;
-import space.itoncek.trailcompass.commons.responses.generic.OkResponse;
 import space.itoncek.trailcompass.commons.utils.BackendException;
+
+import java.time.ZonedDateTime;
+import java.util.List;
+import java.util.UUID;
 
 public class GameManagerWrapper {
     private final ExchangeHandler eh;

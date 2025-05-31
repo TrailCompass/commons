@@ -1,19 +1,27 @@
 package space.itoncek.trailcompass.api.wrapper;
 
-import java.util.List;
-import java.util.UUID;
+/*
+ *
+ * ████████╗██████╗  █████╗ ██╗██╗      ██████╗ ██████╗ ███╗   ███╗██████╗  █████╗ ███████╗███████╗
+ * ╚══██╔══╝██╔══██╗██╔══██╗██║██║     ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██╔══██╗██╔════╝██╔════╝
+ *    ██║   ██████╔╝███████║██║██║     ██║     ██║   ██║██╔████╔██║██████╔╝███████║███████╗███████╗
+ *    ██║   ██╔══██╗██╔══██║██║██║     ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██╔══██║╚════██║╚════██║
+ *    ██║   ██║  ██║██║  ██║██║███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ██║  ██║███████║███████║
+ *    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
+ *
+ *                                    Copyright (c) 2025.
+ */
 
 import space.itoncek.trailcompass.api.ExchangeHandler;
 import space.itoncek.trailcompass.commons.objects.Player;
 import space.itoncek.trailcompass.commons.objects.Token;
-import space.itoncek.trailcompass.commons.requests.auth.ListPlayersRequest;
-import space.itoncek.trailcompass.commons.requests.auth.LoginRequest;
-import space.itoncek.trailcompass.commons.requests.auth.ProfileOtherRequest;
-import space.itoncek.trailcompass.commons.requests.auth.ProfileRequest;
-import space.itoncek.trailcompass.commons.requests.auth.RegisterRequest;
+import space.itoncek.trailcompass.commons.requests.auth.*;
 import space.itoncek.trailcompass.commons.responses.auth.LoginResponse;
 import space.itoncek.trailcompass.commons.responses.generic.OkResponse;
 import space.itoncek.trailcompass.commons.utils.BackendException;
+
+import java.util.List;
+import java.util.UUID;
 
 public class AuthWrapper  {
     private final ExchangeHandler eh;
