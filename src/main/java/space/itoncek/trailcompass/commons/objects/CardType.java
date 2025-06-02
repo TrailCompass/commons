@@ -50,7 +50,7 @@ public enum CardType  implements Serializable {
 	private static final long serialVersionUID = Constants.versionID;
 
 	public final CardClass cardClass;
-	private final CardCastRequirement requirement;
+	public final CardCastRequirement requirement;
 
 	CardType(CardClass cardClass, CardCastRequirement requirement) {
 		this.cardClass = cardClass;

@@ -5,4 +5,5 @@ public interface IExchange {
 	ISystemExchange system();
 	IMapExchange map();
 	IGameManagerExchange gameMgr();
+	IDeckExchange deck();
 }

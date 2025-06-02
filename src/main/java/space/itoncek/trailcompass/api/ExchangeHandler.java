@@ -32,6 +32,11 @@ public class ExchangeHandler implements IExchange {
 		return new GameManagerExchange(this);
 	}
 
+	@Override
+	public IDeckExchange deck() {
+		return new DeckExchange(this);
+	}
+
 	public WrappedExchange wrapped(Token token) {
 		return new WrappedExchange(this, token);
 	}

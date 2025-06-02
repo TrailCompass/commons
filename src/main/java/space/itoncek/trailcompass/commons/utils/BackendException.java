@@ -8,4 +8,8 @@ public class BackendException extends Exception {
 	public BackendException(Exception e) {
 		super(e);
 	}
+
+	public BackendException(String exception, Exception e) {
+		super(exception, e);
+	}
 }
