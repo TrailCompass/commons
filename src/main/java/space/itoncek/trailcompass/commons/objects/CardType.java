@@ -1,11 +1,24 @@
 package space.itoncek.trailcompass.commons.objects;
 
+/*
+ *
+ * ████████╗██████╗  █████╗ ██╗██╗      ██████╗ ██████╗ ███╗   ███╗██████╗  █████╗ ███████╗███████╗
+ * ╚══██╔══╝██╔══██╗██╔══██╗██║██║     ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██╔══██╗██╔════╝██╔════╝
+ *    ██║   ██████╔╝███████║██║██║     ██║     ██║   ██║██╔████╔██║██████╔╝███████║███████╗███████╗
+ *    ██║   ██╔══██╗██╔══██║██║██║     ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██╔══██║╚════██║╚════██║
+ *    ██║   ██║  ██║██║  ██║██║███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ██║  ██║███████║███████║
+ *    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
+ *
+ *                                    Copyright (c) 2025.
+ */
+
 import space.itoncek.trailcompass.commons.Constants;
-import static space.itoncek.trailcompass.commons.objects.CardCastRequirement.*;
-import static space.itoncek.trailcompass.commons.objects.CardClass.*;
 
 import java.io.Serial;
 import java.io.Serializable;
+
+import static space.itoncek.trailcompass.commons.objects.CardCastRequirement.*;
+import static space.itoncek.trailcompass.commons.objects.CardClass.*;
 
 public enum CardType  implements Serializable {
 	TimeBonusRed(Time, Nothing),
