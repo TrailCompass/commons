@@ -1,4 +1,4 @@
-package space.itoncek.trailcompass.commons.objects;
+package space.itoncek.trailcompass.commons.requests.deck;
 
 /*
  *
@@ -12,24 +12,12 @@ package space.itoncek.trailcompass.commons.objects;
  *                                    Copyright (c) 2025.
  */
 
-import space.itoncek.trailcompass.commons.Constants;
+import space.itoncek.trailcompass.commons.exchange.Authorized;
+import space.itoncek.trailcompass.commons.objects.Token;
 
-import java.io.Serial;
 import java.io.Serializable;
+import java.util.UUID;
 
-public enum CardCastRequirement  implements Serializable {
-	Nothing,
-	OtherCard,
-	TwoOtherCards,
-	Text,
-	Image,
-	Request,
-	NotEndgame,
-	FreeQuestion,
-	OtherTimeBonusCard,
-	OtherPowerupCard,
-	DiceRoll, Uncastable;
-	// TODO)) When changed, please update commons version (more info in Constants.java)
-	@Serial
-	private static final long serialVersionUID = Constants.versionID;
+public record CastCardWithOtherPowerupCardRequest(Token token, UUID cardID,
+                                                  UUID otherCardID) implements Serializable, Authorized {
 }
