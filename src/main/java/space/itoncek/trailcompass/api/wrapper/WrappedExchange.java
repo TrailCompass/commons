@@ -28,6 +28,10 @@ public class WrappedExchange{
         return new AuthWrapper(eh, token);
     }
 
+    public DeckWrapper deck() {
+        return new DeckWrapper(eh, token);
+    }
+
     public SystemWrapper system() {
         return new SystemWrapper(eh, token);
     }
