@@ -78,4 +78,9 @@ public class DeckWrapper {
     public void castCardWithOtherPowerupCard(UUID card_id, UUID powerup_id) throws BackendException {
         eh.deck().castCardWithOtherPowerupCard(new CastCardWithOtherPowerupCardRequest(token, card_id, powerup_id));
     }
+
+    public int getHandSize() {
+        //TODO)) Implement on server!
+        return 0;
+    }
 }
