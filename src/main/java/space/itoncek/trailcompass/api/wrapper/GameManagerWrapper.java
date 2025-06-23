@@ -47,4 +47,9 @@ public class GameManagerWrapper {
     public List<Location> getSeekerLocation() throws BackendException {
         return eh.gameMgr().getSeekerLocation(new SeekerLocationRequest(token)).locations();
     }
+
+    public Integer getGameSize() throws BackendException {
+        // todo)) Not implemented in protocol!
+        return 2;
+    }
 }

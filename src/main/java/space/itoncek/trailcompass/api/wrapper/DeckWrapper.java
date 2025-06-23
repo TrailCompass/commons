@@ -83,4 +83,8 @@ public class DeckWrapper {
         //TODO)) Implement on server!
         return 0;
     }
+
+    public void discardCard(UUID cardID) {
+        //TODO)) Implement on server!
+    }
 }
