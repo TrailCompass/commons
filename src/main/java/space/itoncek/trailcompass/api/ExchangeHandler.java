@@ -49,6 +49,11 @@ public class ExchangeHandler implements IExchange {
 		return new DeckExchange(this);
 	}
 
+	@Override
+	public IMessageExchange message() {
+		return new IMessageExchange(this); // TODO: fix this
+	}
+
 	public WrappedExchange wrapped(Token token) {
 		return new WrappedExchange(this, token);
 	}
