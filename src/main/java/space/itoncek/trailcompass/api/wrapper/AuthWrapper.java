@@ -13,12 +13,12 @@ package space.itoncek.trailcompass.api.wrapper;
  */
 
 import space.itoncek.trailcompass.api.ExchangeHandler;
-import space.itoncek.trailcompass.commons.objects.Player;
-import space.itoncek.trailcompass.commons.objects.Token;
-import space.itoncek.trailcompass.commons.requests.auth.*;
-import space.itoncek.trailcompass.commons.responses.auth.LoginResponse;
-import space.itoncek.trailcompass.commons.responses.generic.OkResponse;
-import space.itoncek.trailcompass.commons.utils.BackendException;
+import space.itoncek.trailcompass.proto.objects.Player;
+import space.itoncek.trailcompass.proto.objects.Token;
+import space.itoncek.trailcompass.proto.requests.auth.*;
+import space.itoncek.trailcompass.proto.responses.auth.LoginResponse;
+import space.itoncek.trailcompass.proto.responses.generic.OkResponse;
+import space.itoncek.trailcompass.proto.utils.BackendException;
 
 import java.util.List;
 import java.util.UUID;

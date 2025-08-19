@@ -16,6 +16,7 @@ plugins {
 }
 
 group = 'space.itoncek.trailcompass'
+// todo)) Update version when changing the protocol!
 version = "v0.0.9.8"
 
 repositories {

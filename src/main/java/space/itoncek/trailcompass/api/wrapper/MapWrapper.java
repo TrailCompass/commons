@@ -13,10 +13,10 @@ package space.itoncek.trailcompass.api.wrapper;
  */
 
 import space.itoncek.trailcompass.api.ExchangeHandler;
-import space.itoncek.trailcompass.commons.objects.Token;
-import space.itoncek.trailcompass.commons.requests.map.MapHashRequest;
-import space.itoncek.trailcompass.commons.requests.map.MapRequest;
-import space.itoncek.trailcompass.commons.utils.BackendException;
+import space.itoncek.trailcompass.proto.objects.Token;
+import space.itoncek.trailcompass.proto.requests.map.MapHashRequest;
+import space.itoncek.trailcompass.proto.requests.map.MapRequest;
+import space.itoncek.trailcompass.proto.utils.BackendException;
 
 public class MapWrapper {
     private final ExchangeHandler eh;

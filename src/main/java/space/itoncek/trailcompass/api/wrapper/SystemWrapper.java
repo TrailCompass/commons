@@ -13,12 +13,12 @@ package space.itoncek.trailcompass.api.wrapper;
  */
 
 import space.itoncek.trailcompass.api.ExchangeHandler;
-import space.itoncek.trailcompass.commons.objects.Token;
-import space.itoncek.trailcompass.commons.requests.system.ServerTimeRequest;
-import space.itoncek.trailcompass.commons.requests.system.ServerVersionRequest;
-import space.itoncek.trailcompass.commons.responses.system.ServerTimeResponse;
-import space.itoncek.trailcompass.commons.responses.system.ServerVersionResponse;
-import space.itoncek.trailcompass.commons.utils.BackendException;
+import space.itoncek.trailcompass.proto.objects.Token;
+import space.itoncek.trailcompass.proto.requests.system.ServerTimeRequest;
+import space.itoncek.trailcompass.proto.requests.system.ServerVersionRequest;
+import space.itoncek.trailcompass.proto.responses.system.ServerTimeResponse;
+import space.itoncek.trailcompass.proto.responses.system.ServerVersionResponse;
+import space.itoncek.trailcompass.proto.utils.BackendException;
 
 public class SystemWrapper {
     private final ExchangeHandler eh;

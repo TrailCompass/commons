@@ -13,7 +13,7 @@ package space.itoncek.trailcompass.api.wrapper;
  */
 
 import space.itoncek.trailcompass.api.ExchangeHandler;
-import space.itoncek.trailcompass.commons.objects.Token;
+import space.itoncek.trailcompass.proto.objects.Token;
 
 public class WrappedExchange{
     private final ExchangeHandler eh;
